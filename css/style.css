@@ -672,6 +672,7 @@ aside {
         i {
             display: flex;
             position: sticky;
+            align-items: center;
             right: 2rem;
             left: 2rem;
             font-size: 1.5rem;
