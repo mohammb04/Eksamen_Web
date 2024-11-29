@@ -62,6 +62,9 @@ p, a {font-size: 1rem;}
 #banner {
     text-align: right;
     color: #fff;
+    i {
+        display: none;
+    }
     #banner1{
         background-image: url("../image/banner/banner1.jpg");
         background-repeat: no-repeat;
@@ -666,7 +669,15 @@ aside {
         flex-direction: row;
         display: -webkit-box;
         max-width: 850px;
-        gap: 1rem;
+        i {
+            display: flex;
+            position: sticky;
+            right: 2rem;
+            left: 2rem;
+            font-size: 1.5rem;
+            color: #fff;
+            width: 0;
+        }
         #banner1 {
             width: 100%;
         }
