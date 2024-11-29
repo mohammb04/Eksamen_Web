@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Users/belhadj/Documents/GitHub/Webutvikling/Eksamen_Web/icons/css/fontawesome.css">
     <link rel="stylesheet" href="/Users/belhadj/Documents/GitHub/Webutvikling/Eksamen_Web/icons/css/brands.css">
     <link rel="stylesheet" href="/Users/belhadj/Documents/GitHub/Webutvikling/Eksamen_Web/icons/css/solid.css">
+    <link rel="stylesheet" href="/Users/belhadj/Documents/GitHub/Webutvikling/Eksamen_Web/icons/css/regular.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -37,25 +38,27 @@
                     </li>
                 </ul>
             </nav>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
             <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </header>
         <main id="main_produkt">
             <nav id="brodsmule">
                 <!-- En ekstra navigasjonsmeny, kanskje for underkategorier -->
                 <ul>
-                    <li> <a href="Index.html">Hjem ></a></li>
+                    <li> <a href="Index.html">Hjem<i class="fa-solid fa-angle-right"></i></a></li>
                     <!-- Lenke til hjemmesiden -->
-                    <li> <a href="Index.html#kategori">Våre mest populære kategorier ></a></li>
+                    <li> <a href="Index.html#kategori">Våre mest populære kategorier<i class="fa-solid fa-angle-right"></i></a></li>
                     <!-- Lenke til "Kategori"-seksjonen -->
                     <li>Produkt</li>
                     <!-- Tekst uten lenke til produkt under "Kategori"-seksjonen -->
                 </ul>
             </nav>
             <section id="prod_bilder">
-                <img id="aktiv" src="https://picsum.photos/200">
-                <img src="https://picsum.photos/200">
-                <img src="https://picsum.photos/200">
-                <img src="https://picsum.photos/200">
+                <img id="aktiv" src="https://picsum.photos/200" alt="eksempel tekst">
+                <img src="https://picsum.photos/200" alt="eksempel tekst">
+                <img src="https://picsum.photos/200" alt="eksempel tekst">
+                <img src="https://picsum.photos/200" alt="eksempel tekst">
             </section>
             <section id="prod_info">
                 <h1>Produktnavn</h1>
@@ -75,51 +78,143 @@
                     <a>Legg i handlekurv</a>
                     <i class="fa-regular fa-heart"></i>
                 </form>
+                <details class="product-details">
+                    <summary>Materiale og vedlikehold <i class="fa-solid fa-plus"></i></summary>
+                    <p>Dette produktet er laget av 100% bomull. For vedlikehold anbefales det å vaske på 30°C og unngå tørketrommel.</p>
+                </details>
+                
+                <details class="product-details">
+                    <summary>Produktdetaljer <i class="fa-solid fa-plus"></i></summary>
+                    <p>Dette er et klassisk produkt designet for komfort og holdbarhet. Perfekt for både hverdagsbruk og spesielle anledninger.</p>
+                </details>
+                
+                <details class="product-details">
+                    <summary>Størrelsetabell <i class="fa-solid fa-plus"></i></summary>
+                    <table>
+                        <tr>
+                            <th>Størrelse</th>
+                            <th>Bryst (cm)</th>
+                            <th>Midje (cm)</th>
+                            <th>Hofte (cm)</th>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>90</td>
+                            <td>72</td>
+                            <td>96</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>95</td>
+                            <td>77</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>100</td>
+                            <td>82</td>
+                            <td>106</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>105</td>
+                            <td>87</td>
+                            <td>111</td>
+                        </tr>
+                    </table>
+                </details>
+                
+                <details class="product-details">
+                    <summary>Anmeldelser <i class="fa-solid fa-plus"></i></summary>
+                    <article>
+                        <h3>Overskrift</h3>
+                        <p>"Fantastisk produkt! Kvaliteten er topp og leveringen var rask."</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </article>
+                    <article>
+                        <h3>Overskrift</h3>
+                        <p>"Produktet var akkurat som forventet. Anbefales!"</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </article>
+                </details>                
             </section>
         </main>
         <aside>
             <h2>Liknende produkter</h2>
-            <a href="Index.html#populer">Se flere liknende produkter →</a>
-            <article>
-                <img src="https://picsum.photos/200">
-                <h3>Produktnavn</h3>
-                <p>Pris</p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </article>
-            <article>
-                <img src="https://picsum.photos/200">
-                <h3>Produktnavn</h3>
-                <p>Pris</p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </article>
-            <article>
-                <img src="https://picsum.photos/200">
-                <h3>Produktnavn</h3>
-                <p>Pris</p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </article>
-            <article>
-                <img src="https://picsum.photos/200">
-                <h3>Produktnavn</h3>
-                <p>Pris</p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </article>
+            <a href="Index.html#populer">Se flere liknende produkter <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="product.html" class="a_kort_link">
+                <article class="a_kort">
+                    <i class="fa-regular fa-heart a_kort_hjerte"></i>
+                    <img src="https://picsum.photos/200" alt="eksempel tekst">
+                    <h3>Produktnavn</h3>
+                    <p>Pris</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </article>
+            </a>
+            <a href="product.html" class="a_kort_link">
+                <article class="a_kort">
+                    <i class="fa-regular fa-heart a_kort_hjerte"></i>
+                    <img src="https://picsum.photos/200" alt="eksempel tekst">
+                    <h3>Produktnavn</h3>
+                    <p>Pris</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </article>
+            </a>
+            <a href="product.html" class="a_kort_link">
+                <article class="a_kort">
+                    <i class="fa-regular fa-heart a_kort_hjerte"></i>
+                    <img src="https://picsum.photos/200" alt="eksempel tekst">
+                    <h3>Produktnavn</h3>
+                    <p>Pris</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </article>
+            </a>
+            <a href="product.html" class="a_kort_link">
+                <article class="a_kort">
+                    <i class="fa-regular fa-heart a_kort_hjerte"></i>
+                    <img src="https://picsum.photos/200" alt="eksempel tekst">
+                    <h3>Produktnavn</h3>
+                    <p>Pris</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </article>
+            </a>
+            <a href="product.html" class="a_kort_link">
+                <article class="a_kort">
+                    <i class="fa-regular fa-heart a_kort_hjerte"></i>
+                    <img src="https://picsum.photos/200" alt="eksempel tekst">
+                    <h3>Produktnavn</h3>
+                    <p>Pris</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </article>
+            </a>
         </aside>
         <footer id="global_footer">
             <section id="f_logo">
@@ -128,10 +223,10 @@
             </section>
             <section id="f_kontakt">
                 <h3>KONTAKT</h3>
-                <p>Høgskolen i Østfold</p>
-                <p>B R A veien 4</p>
-                <p>NO-1757 Halden</p>
-                <p>Norway</p>
+                <p><i class="fa-solid fa-map-pin"></i>Høgskolen i Østfold</p>
+                <p><i class="fa-solid fa-location-dot"></i>B R A veien 4</p>
+                <p><i class="fa-regular fa-envelope"></i>NO-1757 Halden</p>
+                <p><i class="fa-solid fa-globe"></i>Norway</p>
             </section>
             <section id="f_snarvei">
                 <h3>SNARVEIER</h3>
@@ -139,10 +234,10 @@
             </section>
             <section id="f_sosial">
                 <h3>SOSIALE MEDIER</h3>
-                <a href="https://www.instagram.com">Instagram</a>
-                <a href="https://www.facebook.com">Facebook</a>
-                <a href="https://www.linkedin.com">LinkedIn</a>
-                <a href="https://www.pinterest.com">Pinterest</a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
             </section>
         </footer>
     </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Users/belhadj/Documents/GitHub/Webutvikling/Eksamen_Web/icons/css/fontawesome.css">
     <link rel="stylesheet" href="/Users/belhadj/Documents/GitHub/Webutvikling/Eksamen_Web/icons/css/brands.css">
     <link rel="stylesheet" href="/Users/belhadj/Documents/GitHub/Webutvikling/Eksamen_Web/icons/css/solid.css">
+    <link rel="stylesheet" href="/Users/belhadj/Documents/GitHub/Webutvikling/Eksamen_Web/icons/css/regular.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -37,6 +38,8 @@
                     </li>
                 </ul>
             </nav>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
             <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </header>
         <main id="kasse">
@@ -106,9 +109,9 @@
                         Etternavn
                         <input type="text" id="etternavn" name="etternavn" placeholder="Nordmann*" required>
                     </label>
-                    <label id="gateadresse" for="gateadresse">
+                    <label id="gateadresse">
                         Gateadresse
-                        <input type="text" name="gateadresse" placeholder="BRA-Veien 4*" required>
+                        <input type="text" placeholder="BRA-Veien 4*" required>
                     </label>
                     <label for="postnummer">
                         Postnummer
@@ -134,21 +137,27 @@
                 <h2>3. LEVERING</h2>
                 <p>Velg leveringsmetode:</p>
                 <form>
-                    <label for="ekspressHjem">
-                        <input type="radio" id="ekspressHjem" name="levering" value="ekspressHjem" required>
+                    <article>
+                        <label for="ekspressHjem">
+                            <input type="radio" id="ekspressHjem" name="levering" value="ekspressHjem" required>
+                        </label>
                         <i class="fa-solid fa-truck-fast"></i> Ekspresslevering hjem – kr 99,-
                         <p>Lorum ipsum dolor sit amet, consectetur adipiscing elit. Ekspresslevering hjem gir deg pakken på 3–4 virkedager.</p>
-                    </label>
-                    <label for="ekspressUtleveringssted">
-                        <input type="radio" id="ekspressUtleveringssted" name="levering" value="ekspressUtleveringssted">
+                    </article>
+                    <article>
+                        <label for="ekspressUtleveringssted">
+                            <input type="radio" id="ekspressUtleveringssted" name="levering" value="ekspressUtleveringssted">
+                        </label>
                         <i class="fa-solid fa-truck-fast"></i> Ekspress pakke til utleveringssted – kr 49,-
                         <p>Lorum ipsum dolor sit amet, consectetur adipiscing elit. Pakken er tilgjengelig på 1–3 virkedager.</p>
-                    </label>
-                    <label for="standardHjemlevering">
-                        <input type="radio" id="standardHjemlevering" name="levering" value="standardHjemlevering">
+                    </article>
+                    <article>
+                        <label for="standardHjemlevering">
+                            <input type="radio" id="standardHjemlevering" name="levering" value="standardHjemlevering">
+                        </label>
                         <i class="fa-solid fa-truck-fast"></i> Standard hjemlevering – kr 0,-
                         <p>Lorum ipsum dolor sit amet, consectetur adipiscing elit. Standardlevering tar 5–8 virkedager.</p>
-                    </label>                    
+                    </article>                  
                 </form>
             </section>
             <section id="betaling">
@@ -156,9 +165,9 @@
                 <p>Betal med kort</p>
                 <i class="fa-solid fa-credit-card" title="Kortbetaling"></i>                
                 <form>
-                    <label id="kortnummer" for="kortnummer">
+                    <label id="kortnummer">
                         Kortnummer:
-                        <input type="text" name="kortnummer" placeholder="Kortnummer" required>
+                        <input type="text" placeholder="Kortnummer" required>
                     </label>
                     <label for="utlop">
                         Utløpsdato:
@@ -172,7 +181,7 @@
                     <button type="submit">Betal nå</button>
                     <p>§ Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
                     <label  id="vilkar">
-                        <input type="checkbox"name="vilkar" required>
+                        <input type="checkbox" name="vilkar" required>
                         Ja, jeg godtar vilkårene
                     </label>
                     <label id="nyhetsbrev">
@@ -189,21 +198,24 @@
             </section>
             <section id="f_kontakt">
                 <h3>KONTAKT</h3>
-                <p>Høgskolen i Østfold</p>
-                <p>B R A veien 4</p>
-                <p>NO-1757 Halden</p>
-                <p>Norway</p>
+                <p><i class="fa-solid fa-map-pin"></i>Høgskolen i Østfold</p>
+                <p><i class="fa-solid fa-location-dot"></i>B R A veien 4</p>
+                <p><i class="fa-regular fa-envelope"></i>NO-1757 Halden</p>
+                <p><i class="fa-solid fa-globe"></i>Norway</p>
             </section>
             <section id="f_snarvei">
                 <h3>SNARVEIER</h3>
+                <a href="Index.html#populer">Produkter</a>
+                <a href="Index.html#kategori">Kategorier</a>
+                <a href="#global_footer">Kontakt oss</a>
                 <a href="#global_header">Tilbake til toppen</a>
             </section>
             <section id="f_sosial">
                 <h3>SOSIALE MEDIER</h3>
-                <a href="https://www.instagram.com">Instagram</a>
-                <a href="https://www.facebook.com">Facebook</a>
-                <a href="https://www.linkedin.com">LinkedIn</a>
-                <a href="https://www.pinterest.com">Pinterest</a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
             </section>
         </footer>
     </div>

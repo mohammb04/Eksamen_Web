@@ -60,9 +60,31 @@ p, a {font-size: 1rem;}
 }
 
 #banner {
-    background-color: brown;
     text-align: right;
-    padding: 1rem;
+    color: #fff;
+    #banner1{
+        background-image: url("../image/banner/banner1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 1rem;
+    }
+    #banner2 {
+        display: none;
+        background-image: url("../image/banner/banner2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 1rem;
+    }
+    #banner3 {
+        display: none;
+        background-image: url("../image/banner/banner3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 1rem;
+    }
 }
 
 .btn {
@@ -94,6 +116,38 @@ p, a {font-size: 1rem;}
             }
         }
     }
+}
+.a_kort_link {
+    text-decoration: none;
+    color: #000;
+    width: fit-content;
+}
+.a_kort {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.a_kort_hjerte {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.25);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.a_kort img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 #kategori {
@@ -157,8 +211,6 @@ p, a {font-size: 1rem;}
     }
 }
 
-
-
 #anmeldelser {
     display: flex;
     flex-direction: column;
@@ -210,6 +262,33 @@ p, a {font-size: 1rem;}
     background: #888;
 }
 
+#global_footer {
+    #f_kontakt {
+        i {
+            margin: 0 1rem;
+        }
+    }
+    #f_sosial {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 65%;
+        h3 {
+            width: 100%;
+            height: fit-content;
+        }
+        a {
+            margin-bottom: 5rem;
+        }
+    }
+    #f_snarvei {
+        display: flex;
+        flex-direction: column;
+        a{
+            margin: 0.25rem 0;
+        }
+    }
+}
 
 #brodsmule {
     ul {
@@ -222,14 +301,31 @@ p, a {font-size: 1rem;}
             a{
                 text-decoration: none;
                 color: #000;
+                i {
+                    margin: 0 1rem;
+                }
             }
         }
     }
 }
 
 #prod_bilder {
-    display: flex;
-    flex-direction: column;
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: auto;
+    img {
+        max-width: 160px;
+    }
+    #aktiv {
+        min-width: 100%;
+        grid-area: 1 / 1 / 4 / 4;
+    }
 }
 
 #prod_info {
@@ -265,6 +361,58 @@ p, a {font-size: 1rem;}
                     border-style: solid;
                 }
             }
+}
+.product-details {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+}
+
+.product-details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.product-details summary i {
+    font-size: 1rem;
+    color: #333;
+}
+
+.product-details summary:hover {
+    color: #000;
+}
+
+.product-details[open] summary i {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.product-details p,
+.product-details table {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.product-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-details table th,
+.product-details table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.product-details table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
 }
 
 aside {
@@ -350,16 +498,50 @@ aside {
 }
 
 #levering {
-    label {
-        display: block;
-        width: 100%;
-        padding: 1rem;
-        margin: 1rem 0 1rem 0;
-        border-style: solid;
-    }
-    input {
-        padding: 0.75rem;
-    }
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+#levering h2,
+#levering p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#levering form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#levering article {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    background-color: #fff;
+}
+
+#levering article label {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+#levering article input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+#levering article i {
+    margin-right: 0.5rem;
+    color: #333;
+}
+
+#levering article p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 #betaling {
@@ -478,6 +660,35 @@ aside {
             grid-area: 2 / 3 / 3 / 4;
         }
     }
+    #banner {
+        margin: auto;
+        overflow-x: auto;
+        flex-direction: row;
+        display: -webkit-box;
+        max-width: 850px;
+        gap: 1rem;
+        #banner1 {
+            width: 100%;
+        }
+        #banner2 {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+            a{
+                width: fit-content;
+            }
+        }
+        #banner3 {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+            a{
+                width: fit-content;
+            }
+        }
+    }
 
     #populer {
         text-align: center;
@@ -549,25 +760,6 @@ aside {
         #brodsmule {
             width: 100%;
             margin: 1rem 0;
-        }
-
-        #prod_bilder {
-            max-width: 50%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: repeat(4, auto);
-            grid-column-gap: 0.5rem;
-            grid-row-gap: 0.5rem;
-            max-width: fit-content;
-            margin: 0 auto;
-            padding: auto;
-            img {
-                max-width: 160px;
-            }
-            #aktiv {
-                min-width: 100%;
-                grid-area: 1 / 1 / 4 / 4;
-            }
         }
     }
 
